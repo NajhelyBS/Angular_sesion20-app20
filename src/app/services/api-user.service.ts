@@ -8,10 +8,11 @@ export class ApiUserService implements OnInit{
 
   urlJSON = "https://jsonplaceholder.typicode.com/users";
 
-  constructor(private http:HttpClient) { }
+  constructor(private http:HttpClient) {
+    console.log("Conección correcta con el servidor");
+   }
 
   ngOnInit(): void {
-    console.log("Conección correcta con el servidor");
     this.getShow();
   }
 
