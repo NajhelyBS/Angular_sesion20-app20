@@ -1,14 +1,19 @@
-p {
-    font-family: Lato;
-  }
+
   
   h2 {
     font-size: 40px;
     text-shadow: 0px 2px 4px rgb(144, 230, 6);
+    font-weight: 680;
   }
   
   button {
     background-color: rgba(144, 230, 6, 0.938);
     color: white;
-    
+    font-weight: 700;
+    width: 10em;
   }
+
+  button:active {
+    background-color: rgba(17, 114, 25, 0.548);
+  }
+ 
