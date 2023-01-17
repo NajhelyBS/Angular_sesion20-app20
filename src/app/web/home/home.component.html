@@ -1,11 +1,12 @@
 <h2>{{titulo}}</h2>
 
-<button class="form-control">Mostrar Usuarios</button>
+<button class="form-control" (click)="getShow()"  >Mostrar Usuarios</button>
 
 <hr>
 
+<div *ngIf="show">
 <ul>
   <li *ngFor="let user of users">
     {{ user.name }}
   </li>
-</ul>
+</ul></div>

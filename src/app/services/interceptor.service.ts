@@ -16,7 +16,7 @@ export class InterceptorService implements HttpInterceptor {
     request: HttpRequest<any>, 
     next: HttpHandler): Observable<HttpEvent<any>> {
  
-      console.log('intercepción hecha');
+      console.log('intercepción hecha - datos mostrándose');
 
       const newRequest = request.clone({setHeaders:{  //duplicación del request
         Authorization: 'Bearer 1234567890'    //seteo de dato de cabecera (Autorización)
@@ -24,5 +24,7 @@ export class InterceptorService implements HttpInterceptor {
       
       return next.handle(newRequest);
     };
- 
+
+    
 }
+
