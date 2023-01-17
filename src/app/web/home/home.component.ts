@@ -9,7 +9,7 @@ import { ApiUserService } from 'src/app/services/api-user.service';
 export class HomeComponent implements OnInit{
  
   users:any = [];
-  nombre = "Usuarios";
+  titulo = "Usuarios";
   
   constructor(private usuario:ApiUserService){}
 

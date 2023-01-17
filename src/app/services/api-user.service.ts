@@ -6,12 +6,13 @@ import { HttpClient} from '@angular/common/http'
 })
 export class ApiUserService implements OnInit{
 
-  private urlJSON = "";
+  urlJSON = "https://jsonplaceholder.typicode.com/users";
 
   constructor(private http:HttpClient) { }
 
   ngOnInit(): void {
-    
+    console.log("Conección correcta con el servidor");
+    this.getShow();
   }
 
   getShow(){

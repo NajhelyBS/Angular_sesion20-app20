@@ -1,1 +1,11 @@
-<p>home works!</p>
+<h2>{{titulo}}</h2>
+
+<button class="form-control">Mostrar Usuarios</button>
+
+<hr>
+
+<ul>
+  <li *ngFor="let user of users">
+    {{ user.name }}
+  </li>
+</ul>
