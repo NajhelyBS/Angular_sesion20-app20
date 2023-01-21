@@ -5,8 +5,32 @@
 <hr>
 
 <div *ngIf="show">
-<ul>
-  <li *ngFor="let user of users">
-    {{ user.name }}
-  </li>
-</ul></div>
+
+<div class="container mb-5" >
+  <table class="rounded">
+    <thead>
+        <tr class=" border">
+            <th class="text-center py-3" id="title">ID</th>
+            <th class="text-center py-3" id="title">Name</th>
+            <th class="text-center py-3" id="title">Username</th>
+            <th class="text-center py-3" id="title">Email</th>
+            <th class="text-center py-3" id="title">Phone</th>
+            <th class="text-center py-3" id="title">Website</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let user of users">
+            <th class="border px-4 py-3" id="sub">{{user.id}}</th>
+            <th class="border px-4 py-3" id="sub">{{user.name}}</th>
+            <th class="border px-4 py-3" id="sub">{{user.username}}</th>
+            <th class="border px-4 py-3" id="sub">{{user.email}}</th>
+            <th class="border px-4 py-3" id="sub">{{user.phone}}</th>
+            <th class="border px-4 py-3" id="sub">{{user.website}}</th>
+          </tr>
+    </tbody>
+</table>
+</div>
+
+
+</div>

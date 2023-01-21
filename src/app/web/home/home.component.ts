@@ -25,7 +25,7 @@ export class HomeComponent implements OnInit{
     this.usuario.getShow().subscribe(
       res => {
         this.users = res;
-        this.show = true;
+        this.show = !this.show;
       }, err => {
         alert("error");
       }
